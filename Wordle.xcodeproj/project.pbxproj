@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		22B37AD129DDD0C200AC6809 /* Wordle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B37AD029DDD0C200AC6809 /* Wordle.swift */; };
+		22B37AD629DDD3C000AC6809 /* HelpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B37AD529DDD3C000AC6809 /* HelpVC.swift */; };
+		22B37AD829DDD3D900AC6809 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B37AD729DDD3D900AC6809 /* SettingsVC.swift */; };
 		22BBED4529DB3C4C0003373F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BBED4429DB3C4C0003373F /* AppDelegate.swift */; };
 		22BBED4729DB3C4C0003373F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BBED4629DB3C4C0003373F /* SceneDelegate.swift */; };
-		22BBED4929DB3C4C0003373F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BBED4829DB3C4C0003373F /* ViewController.swift */; };
+		22BBED4929DB3C4C0003373F /* GameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BBED4829DB3C4C0003373F /* GameVC.swift */; };
 		22BBED4C29DB3C4C0003373F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22BBED4A29DB3C4C0003373F /* Main.storyboard */; };
 		22BBED4E29DB3C4E0003373F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22BBED4D29DB3C4E0003373F /* Assets.xcassets */; };
 		22BBED5129DB3C4E0003373F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22BBED4F29DB3C4E0003373F /* LaunchScreen.storyboard */; };
@@ -18,10 +21,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		22B37AD029DDD0C200AC6809 /* Wordle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wordle.swift; sourceTree = "<group>"; };
+		22B37AD529DDD3C000AC6809 /* HelpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpVC.swift; sourceTree = "<group>"; };
+		22B37AD729DDD3D900AC6809 /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
 		22BBED4129DB3C4C0003373F /* Wordle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wordle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22BBED4429DB3C4C0003373F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		22BBED4629DB3C4C0003373F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		22BBED4829DB3C4C0003373F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		22BBED4829DB3C4C0003373F /* GameVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameVC.swift; sourceTree = "<group>"; };
 		22BBED4B29DB3C4C0003373F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		22BBED4D29DB3C4E0003373F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		22BBED5029DB3C4E0003373F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -41,11 +47,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		22BBED3829DB3C4C0003373F = {
+		22B37ADA29DDD43C00AC6809 /* ImportedResources */ = {
 			isa = PBXGroup;
 			children = (
 				22BBED5929DB3C8F0003373F /* dictionary.txt */,
 				22BBED5829DB3C8F0003373F /* help.png */,
+			);
+			name = ImportedResources;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		22B37ADB29DDD46800AC6809 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				22BBED4829DB3C4C0003373F /* GameVC.swift */,
+				22B37AD529DDD3C000AC6809 /* HelpVC.swift */,
+				22B37AD729DDD3D900AC6809 /* SettingsVC.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		22B37ADC29DDD48400AC6809 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				22B37AD029DDD0C200AC6809 /* Wordle.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		22BBED3829DB3C4C0003373F = {
+			isa = PBXGroup;
+			children = (
 				22BBED4329DB3C4C0003373F /* Wordle */,
 				22BBED4229DB3C4C0003373F /* Products */,
 			);
@@ -62,13 +94,15 @@
 		22BBED4329DB3C4C0003373F /* Wordle */ = {
 			isa = PBXGroup;
 			children = (
-				22BBED4429DB3C4C0003373F /* AppDelegate.swift */,
-				22BBED4629DB3C4C0003373F /* SceneDelegate.swift */,
-				22BBED4829DB3C4C0003373F /* ViewController.swift */,
+				22B37ADA29DDD43C00AC6809 /* ImportedResources */,
+				22B37ADC29DDD48400AC6809 /* Models */,
+				22B37ADB29DDD46800AC6809 /* ViewControllers */,
 				22BBED4A29DB3C4C0003373F /* Main.storyboard */,
 				22BBED4D29DB3C4E0003373F /* Assets.xcassets */,
 				22BBED4F29DB3C4E0003373F /* LaunchScreen.storyboard */,
 				22BBED5229DB3C4E0003373F /* Info.plist */,
+				22BBED4629DB3C4C0003373F /* SceneDelegate.swift */,
+				22BBED4429DB3C4C0003373F /* AppDelegate.swift */,
 			);
 			path = Wordle;
 			sourceTree = "<group>";
@@ -146,9 +180,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22BBED4929DB3C4C0003373F /* ViewController.swift in Sources */,
+				22B37AD129DDD0C200AC6809 /* Wordle.swift in Sources */,
+				22B37AD629DDD3C000AC6809 /* HelpVC.swift in Sources */,
+				22BBED4929DB3C4C0003373F /* GameVC.swift in Sources */,
 				22BBED4529DB3C4C0003373F /* AppDelegate.swift in Sources */,
 				22BBED4729DB3C4C0003373F /* SceneDelegate.swift in Sources */,
+				22B37AD829DDD3D900AC6809 /* SettingsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
