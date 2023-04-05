@@ -9,11 +9,23 @@ import UIKit
 
 class GameVC: UIViewController {
 
+    var game:Wordle = Wordle()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        self.game = Wordle()
     }
-
+    
+    func resetView() {
+        self.game = Wordle()
+    }
+    
+    
+    
+    
+    
+    
 
 }
 

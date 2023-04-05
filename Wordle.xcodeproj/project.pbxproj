@@ -10,6 +10,10 @@
 		22B37AD129DDD0C200AC6809 /* Wordle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B37AD029DDD0C200AC6809 /* Wordle.swift */; };
 		22B37AD629DDD3C000AC6809 /* HelpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B37AD529DDD3C000AC6809 /* HelpVC.swift */; };
 		22B37AD829DDD3D900AC6809 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B37AD729DDD3D900AC6809 /* SettingsVC.swift */; };
+		22B37ADE29DDD66F00AC6809 /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B37ADD29DDD66F00AC6809 /* Dictionary.swift */; };
+		22B37AE029DDDFAF00AC6809 /* TextFieldVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B37ADF29DDDFAF00AC6809 /* TextFieldVC.swift */; };
+		22B37AE229DDDFE000AC6809 /* Shakeable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B37AE129DDDFE000AC6809 /* Shakeable.swift */; };
+		22B37AE629DDE30F00AC6809 /* LettersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B37AE529DDE30F00AC6809 /* LettersVC.swift */; };
 		22BBED4529DB3C4C0003373F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BBED4429DB3C4C0003373F /* AppDelegate.swift */; };
 		22BBED4729DB3C4C0003373F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BBED4629DB3C4C0003373F /* SceneDelegate.swift */; };
 		22BBED4929DB3C4C0003373F /* GameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BBED4829DB3C4C0003373F /* GameVC.swift */; };
@@ -24,6 +28,10 @@
 		22B37AD029DDD0C200AC6809 /* Wordle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wordle.swift; sourceTree = "<group>"; };
 		22B37AD529DDD3C000AC6809 /* HelpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpVC.swift; sourceTree = "<group>"; };
 		22B37AD729DDD3D900AC6809 /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
+		22B37ADD29DDD66F00AC6809 /* Dictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dictionary.swift; sourceTree = "<group>"; };
+		22B37ADF29DDDFAF00AC6809 /* TextFieldVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldVC.swift; sourceTree = "<group>"; };
+		22B37AE129DDDFE000AC6809 /* Shakeable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shakeable.swift; sourceTree = "<group>"; };
+		22B37AE529DDE30F00AC6809 /* LettersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LettersVC.swift; sourceTree = "<group>"; };
 		22BBED4129DB3C4C0003373F /* Wordle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wordle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22BBED4429DB3C4C0003373F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		22BBED4629DB3C4C0003373F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +71,8 @@
 				22BBED4829DB3C4C0003373F /* GameVC.swift */,
 				22B37AD529DDD3C000AC6809 /* HelpVC.swift */,
 				22B37AD729DDD3D900AC6809 /* SettingsVC.swift */,
+				22B37ADF29DDDFAF00AC6809 /* TextFieldVC.swift */,
+				22B37AE529DDE30F00AC6809 /* LettersVC.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -71,6 +81,8 @@
 			isa = PBXGroup;
 			children = (
 				22B37AD029DDD0C200AC6809 /* Wordle.swift */,
+				22B37ADD29DDD66F00AC6809 /* Dictionary.swift */,
+				22B37AE129DDDFE000AC6809 /* Shakeable.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -184,7 +196,11 @@
 				22B37AD629DDD3C000AC6809 /* HelpVC.swift in Sources */,
 				22BBED4929DB3C4C0003373F /* GameVC.swift in Sources */,
 				22BBED4529DB3C4C0003373F /* AppDelegate.swift in Sources */,
+				22B37ADE29DDD66F00AC6809 /* Dictionary.swift in Sources */,
 				22BBED4729DB3C4C0003373F /* SceneDelegate.swift in Sources */,
+				22B37AE629DDE30F00AC6809 /* LettersVC.swift in Sources */,
+				22B37AE029DDDFAF00AC6809 /* TextFieldVC.swift in Sources */,
+				22B37AE229DDDFE000AC6809 /* Shakeable.swift in Sources */,
 				22B37AD829DDD3D900AC6809 /* SettingsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

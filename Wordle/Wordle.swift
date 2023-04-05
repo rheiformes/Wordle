@@ -12,10 +12,16 @@ class Wordle {
     var isSolved : Bool = false
     var maxGuessesAllowed: Int = 6
     
+    let dictionary = Dictionary()
+    
+    //for testing; allows to select a word
     init(correctWord: String) {
         self.key = correctWord
     }
     
-    
+    //for running; generates a random word
+    init() {
+        self.key = self.dictionary.random()
+    }
     
 }
