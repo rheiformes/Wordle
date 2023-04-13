@@ -7,8 +7,7 @@
 
 import UIKit
 
-class TextFieldVC: UITextField, Shakeable {
-
+class TextFieldVC: UITextField {
     func shake() {
         let animation = CABasicAnimation(keyPath: "position")
         

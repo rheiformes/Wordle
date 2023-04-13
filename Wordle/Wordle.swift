@@ -8,9 +8,10 @@
 import Foundation
 class Wordle {
     var key : String
-    var guesses : [String] = []
+    var numGuesses : Int = 0
     var isSolved : Bool = false
-    var maxGuessesAllowed: Int = 6
+    let maxGuessesAllowed: Int = 6
+    let maxLetterLength = 5
     
     let dictionary = Dictionary()
     
@@ -20,8 +21,10 @@ class Wordle {
     }
     
     //for running; generates a random word
+    /** this class generates a wordle game, including a key */
     init() {
         self.key = self.dictionary.random()
     }
+    
     
 }

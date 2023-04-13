@@ -35,7 +35,7 @@ class Dictionary {
             let fileContents = try String(contentsOf: file, encoding: String.Encoding.utf8)
             dictionary = fileContents.components(separatedBy: "\n")
         } catch {
-            fatalError("can't parse \(name)")
+            fatalError("can't parse \(name), check ditionary class file")
         }
     }
     
