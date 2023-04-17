@@ -27,7 +27,10 @@ class Letter {
         }
             //TODO: figure this entie thing out
         if key.contains(letter) {
-            if key[key.index(letterIndex, offsetBy: 0)] == letter {
+            //why is subscripting so weird in swift?? https://www.simpleswiftguide.com/get-character-from-string-using-its-index-in-swift/
+            
+            let keyLetter = String(key[key.index(key.startIndex, offsetBy: letterIndex)])
+            if keyLetter == letter {
                 type = LetterTypes.correct
             }
             else {
@@ -37,7 +40,5 @@ class Letter {
         else {
             type = LetterTypes.incorrect
         }
-        
-        
     }
 }

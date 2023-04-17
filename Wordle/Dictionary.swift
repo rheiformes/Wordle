@@ -15,7 +15,7 @@ import Foundation
 
 class Dictionary {
     private var dictionary: [String] = []
-    
+    private let lenghtLimit = 5
     /**
      imports the dictionary words from file
      */
@@ -37,6 +37,8 @@ class Dictionary {
         } catch {
             fatalError("can't parse \(name), check ditionary class file")
         }
+        
+        dictionary.removeAll{ $0.count != lenghtLimit} //source - https://stackoverflow.com/questions/27878798/remove-specific-array-element-equal-to-string-swift
     }
     
     
