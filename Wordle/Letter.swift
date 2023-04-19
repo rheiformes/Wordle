@@ -21,7 +21,11 @@ class Letter {
     var letterIndex: Int = 0
     var type = LetterTypes.empty
     
-    func assignTypeFrom(key: String) {
+    
+    func setLetterValue(guess: String) {
+        letter = String(guess[guess.index(guess.startIndex, offsetBy: letterIndex)])
+    }
+    func assignTypeFrom(key: String) -> LetterTypes {
         if letter.count != 1 {
             type = LetterTypes.empty
         }
@@ -40,5 +44,6 @@ class Letter {
         else {
             type = LetterTypes.incorrect
         }
+        return type
     }
 }

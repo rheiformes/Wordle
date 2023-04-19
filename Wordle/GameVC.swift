@@ -8,7 +8,7 @@
 import UIKit
 
 
-class GameVC: UIViewController {
+class GameVC: UIViewController, UITextFieldDelegate {
 
     var game:Wordle = Wordle()
 
@@ -19,6 +19,7 @@ class GameVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        guessField.delegate = self
         resetView()
     }
     
@@ -43,8 +44,15 @@ class GameVC: UIViewController {
         }
     }
     
-
-    //TODO: make this an ibaction
+    func textFieldShouldReturn(_ textField:UITextField) -> Bool {
+        let word = textField.text ?? ""
+        //print("guess: \(word)")
+        userEnteredGuess(userWord: word)
+        
+        return true
+    }
+    
+    
     func userEnteredGuess(userWord: String) {
         validateGuess(userWord: userWord)
         
@@ -53,8 +61,12 @@ class GameVC: UIViewController {
     }
         
     func validateGuess(userWord: String) {
-
-        if ((game.dictionary.isValid(phrase: userWord)) && (userWord.count == game.maxLetterLength)) {
+//        print("got to validate")
+//        print(userWord.count)
+//        print(game.maxLetterLength)
+//        print(game.dictionary.isValid(phrase: "ABODE"))
+        if ((game.dictionary.isValid(phrase: userWord.uppercased())) && (userWord.count == game.maxLetterLength)) {
+            print("word \(userWord) is valid")
             addGuess(userWord: userWord)
         }
         else { self.guessField.shake()   }
@@ -62,11 +74,19 @@ class GameVC: UIViewController {
     }
 
     func addGuess(userWord: String) {
+        print("got here")
         game.numGuesses += 1
-        let thisRow = game.numGuesses - 1
+        let thisRow = game.numGuesses - 1 // for the two extra labels/field
+        //print(thisRow)
         if (userWord == game.key) { game.isSolved = true }
         
-        //TODO: this inputs the guess. needs to be checked for correct letters
+        
+        let row = (grid.arrangedSubviews[thisRow + 2] as! UIStackView).arrangedSubviews as! [LetterVC] //??
+
+        for letter in row {
+            letter.updateView(withGuess: userWord) //FIXME: now this doesn't work, plus the dicitonary doesn't have all words?
+            print("updated")
+        }
         
     }
 

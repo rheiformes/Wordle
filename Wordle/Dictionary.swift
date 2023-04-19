@@ -38,7 +38,10 @@ class Dictionary {
             fatalError("can't parse \(name), check ditionary class file")
         }
         
+
+        
         dictionary.removeAll{ $0.count != lenghtLimit} //source - https://stackoverflow.com/questions/27878798/remove-specific-array-element-equal-to-string-swift
+        //print(dictionary.count)
     }
     
     
@@ -46,6 +49,7 @@ class Dictionary {
      checks if a 'word' is valid in the dictionary
      */
     func isValid(phrase : String) -> Bool {
+        
         return dictionary.contains(phrase)
     }
     
