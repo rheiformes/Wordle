@@ -11,6 +11,7 @@
 		2234FA1629F2EFE400D149C2 /* ConfettiSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 2234FA1529F2EFE400D149C2 /* ConfettiSwiftUI */; };
 		2234FA1A29F2F33900D149C2 /* ConfettiVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2234FA1929F2F33900D149C2 /* ConfettiVC.swift */; };
 		2234FA1C29F2F55000D149C2 /* confetti.png in Resources */ = {isa = PBXBuildFile; fileRef = 2234FA1B29F2F55000D149C2 /* confetti.png */; };
+		2234FA1E29F2F83D00D149C2 /* Screen Recording 2023-04-21 at 11.53.06 AM.mov in Resources */ = {isa = PBXBuildFile; fileRef = 2234FA1D29F2F83D00D149C2 /* Screen Recording 2023-04-21 at 11.53.06 AM.mov */; };
 		228A53FA29E86D9C00B31881 /* Letter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228A53F929E86D9C00B31881 /* Letter.swift */; };
 		22B37AD129DDD0C200AC6809 /* Wordle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B37AD029DDD0C200AC6809 /* Wordle.swift */; };
 		22B37AD629DDD3C000AC6809 /* HelpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B37AD529DDD3C000AC6809 /* HelpVC.swift */; };
@@ -32,6 +33,7 @@
 		2234FA1229F2ECBC00D149C2 /* ModesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModesVC.swift; sourceTree = "<group>"; };
 		2234FA1929F2F33900D149C2 /* ConfettiVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfettiVC.swift; sourceTree = "<group>"; };
 		2234FA1B29F2F55000D149C2 /* confetti.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = confetti.png; sourceTree = "<group>"; };
+		2234FA1D29F2F83D00D149C2 /* Screen Recording 2023-04-21 at 11.53.06 AM.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "Screen Recording 2023-04-21 at 11.53.06 AM.mov"; sourceTree = "<group>"; };
 		228A53F929E86D9C00B31881 /* Letter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Letter.swift; sourceTree = "<group>"; };
 		22B37AD029DDD0C200AC6809 /* Wordle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wordle.swift; sourceTree = "<group>"; };
 		22B37AD529DDD3C000AC6809 /* HelpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpVC.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 		22B37ADA29DDD43C00AC6809 /* ImportedResources */ = {
 			isa = PBXGroup;
 			children = (
+				2234FA1D29F2F83D00D149C2 /* Screen Recording 2023-04-21 at 11.53.06 AM.mov */,
 				22BBED5929DB3C8F0003373F /* dictionary.txt */,
 				22BBED5829DB3C8F0003373F /* help.png */,
 				2234FA1B29F2F55000D149C2 /* confetti.png */,
@@ -195,6 +198,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				22BBED5A29DB3C8F0003373F /* help.png in Resources */,
+				2234FA1E29F2F83D00D149C2 /* Screen Recording 2023-04-21 at 11.53.06 AM.mov in Resources */,
 				22BBED5129DB3C4E0003373F /* LaunchScreen.storyboard in Resources */,
 				22BBED4E29DB3C4E0003373F /* Assets.xcassets in Resources */,
 				22BBED5B29DB3C8F0003373F /* dictionary.txt in Resources */,
