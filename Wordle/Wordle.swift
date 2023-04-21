@@ -2,8 +2,8 @@
 //  Wordle.swift
 //  Wordle
 //
-//  Created by Rai, Rhea on 4/5/23.
-//
+//  Created by Rai, Rhea on 4/5/23
+
 
 import Foundation
 class Wordle {
