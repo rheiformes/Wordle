@@ -11,9 +11,9 @@ class LetterVC: UILabel {
 
     var letter: Letter = Letter()
     
-    func updateView(withGuess: String) {
+    func updateView(withGuess: String, key: String) {
         self.letter.setLetterValue(guess: withGuess)
-        letter.assignTypeFrom(key: withGuess)
+        letter.assignTypeFrom(key: key)
         updateView()        
     }
     

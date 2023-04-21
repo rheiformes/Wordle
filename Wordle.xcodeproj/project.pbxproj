@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2234FA1329F2ECBC00D149C2 /* ModesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2234FA1229F2ECBC00D149C2 /* ModesVC.swift */; };
+		2234FA1629F2EFE400D149C2 /* ConfettiSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 2234FA1529F2EFE400D149C2 /* ConfettiSwiftUI */; };
+		2234FA1A29F2F33900D149C2 /* ConfettiVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2234FA1929F2F33900D149C2 /* ConfettiVC.swift */; };
+		2234FA1C29F2F55000D149C2 /* confetti.png in Resources */ = {isa = PBXBuildFile; fileRef = 2234FA1B29F2F55000D149C2 /* confetti.png */; };
 		228A53FA29E86D9C00B31881 /* Letter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228A53F929E86D9C00B31881 /* Letter.swift */; };
 		22B37AD129DDD0C200AC6809 /* Wordle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B37AD029DDD0C200AC6809 /* Wordle.swift */; };
 		22B37AD629DDD3C000AC6809 /* HelpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B37AD529DDD3C000AC6809 /* HelpVC.swift */; };
@@ -25,6 +29,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2234FA1229F2ECBC00D149C2 /* ModesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModesVC.swift; sourceTree = "<group>"; };
+		2234FA1929F2F33900D149C2 /* ConfettiVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfettiVC.swift; sourceTree = "<group>"; };
+		2234FA1B29F2F55000D149C2 /* confetti.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = confetti.png; sourceTree = "<group>"; };
 		228A53F929E86D9C00B31881 /* Letter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Letter.swift; sourceTree = "<group>"; };
 		22B37AD029DDD0C200AC6809 /* Wordle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wordle.swift; sourceTree = "<group>"; };
 		22B37AD529DDD3C000AC6809 /* HelpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpVC.swift; sourceTree = "<group>"; };
@@ -49,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2234FA1629F2EFE400D149C2 /* ConfettiSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +68,7 @@
 			children = (
 				22BBED5929DB3C8F0003373F /* dictionary.txt */,
 				22BBED5829DB3C8F0003373F /* help.png */,
+				2234FA1B29F2F55000D149C2 /* confetti.png */,
 			);
 			name = ImportedResources;
 			path = ..;
@@ -73,6 +82,8 @@
 				22B37AD729DDD3D900AC6809 /* SettingsVC.swift */,
 				22B37ADF29DDDFAF00AC6809 /* TextFieldVC.swift */,
 				22C4591829EDB024006BCDF7 /* LetterVC.swift */,
+				2234FA1229F2ECBC00D149C2 /* ModesVC.swift */,
+				2234FA1929F2F33900D149C2 /* ConfettiVC.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -135,6 +146,9 @@
 			dependencies = (
 			);
 			name = Wordle;
+			packageProductDependencies = (
+				2234FA1529F2EFE400D149C2 /* ConfettiSwiftUI */,
+			);
 			productName = Wordle;
 			productReference = 22BBED4129DB3C4C0003373F /* Wordle.app */;
 			productType = "com.apple.product-type.application";
@@ -163,6 +177,9 @@
 				Base,
 			);
 			mainGroup = 22BBED3829DB3C4C0003373F;
+			packageReferences = (
+				2234FA1429F2EFE400D149C2 /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */,
+			);
 			productRefGroup = 22BBED4229DB3C4C0003373F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -182,6 +199,7 @@
 				22BBED4E29DB3C4E0003373F /* Assets.xcassets in Resources */,
 				22BBED5B29DB3C8F0003373F /* dictionary.txt in Resources */,
 				22BBED4C29DB3C4C0003373F /* Main.storyboard in Resources */,
+				2234FA1C29F2F55000D149C2 /* confetti.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,9 +214,11 @@
 				22B37AD629DDD3C000AC6809 /* HelpVC.swift in Sources */,
 				22BBED4929DB3C4C0003373F /* GameVC.swift in Sources */,
 				228A53FA29E86D9C00B31881 /* Letter.swift in Sources */,
+				2234FA1329F2ECBC00D149C2 /* ModesVC.swift in Sources */,
 				22BBED4529DB3C4C0003373F /* AppDelegate.swift in Sources */,
 				22B37ADE29DDD66F00AC6809 /* Dictionary.swift in Sources */,
 				22BBED4729DB3C4C0003373F /* SceneDelegate.swift in Sources */,
+				2234FA1A29F2F33900D149C2 /* ConfettiVC.swift in Sources */,
 				22B37AE029DDDFAF00AC6809 /* TextFieldVC.swift in Sources */,
 				22C4591929EDB024006BCDF7 /* LetterVC.swift in Sources */,
 				22B37AD829DDD3D900AC6809 /* SettingsVC.swift in Sources */,
@@ -417,6 +437,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2234FA1429F2EFE400D149C2 /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/simibac/ConfettiSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2234FA1529F2EFE400D149C2 /* ConfettiSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2234FA1429F2EFE400D149C2 /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */;
+			productName = ConfettiSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 22BBED3929DB3C4C0003373F /* Project object */;
 }

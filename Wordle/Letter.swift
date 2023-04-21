@@ -34,6 +34,7 @@ class Letter {
             //why is subscripting so weird in swift?? https://www.simpleswiftguide.com/get-character-from-string-using-its-index-in-swift/
             
             let keyLetter = String(key[key.index(key.startIndex, offsetBy: letterIndex)])
+            print("\(keyLetter), \(letter)")
             if keyLetter == letter {
                 type = LetterTypes.correct
             }

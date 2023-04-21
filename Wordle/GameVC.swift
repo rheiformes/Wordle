@@ -20,6 +20,7 @@ class GameVC: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         guessField.delegate = self
+        self.guessField.isEnabled = true
         resetView()
     }
     
@@ -61,10 +62,6 @@ class GameVC: UIViewController, UITextFieldDelegate {
     }
         
     func validateGuess(userWord: String) {
-//        print("got to validate")
-//        print(userWord.count)
-//        print(game.maxLetterLength)
-//        print(game.dictionary.isValid(phrase: "ABODE"))
         if ((game.dictionary.isValid(phrase: userWord.uppercased())) && (userWord.count == game.maxLetterLength)) {
             print("word \(userWord) is valid")
             addGuess(userWord: userWord)
@@ -77,22 +74,48 @@ class GameVC: UIViewController, UITextFieldDelegate {
         print("got here")
         game.numGuesses += 1
         let thisRow = game.numGuesses - 1 // for the two extra labels/field
-        //print(thisRow)
         if (userWord == game.key) { game.isSolved = true }
         
         
         let row = (grid.arrangedSubviews[thisRow + 2] as! UIStackView).arrangedSubviews as! [LetterVC] //??
 
         for letter in row {
-            letter.updateView(withGuess: userWord) //FIXME: now this doesn't work, plus the dicitonary doesn't have all words?
+            letter.updateView(withGuess: userWord, key: game.key)
             print("updated")
         }
         
     }
 
     
+    @IBAction func goToHelp(_ sender: Any) {
+        performSegue(withIdentifier: "toHelp", sender: self)
+    }
+    
+    @IBAction func goToSettings(_ sender: Any) {
+        performSegue(withIdentifier: "toSettings", sender: self)
+    }
     func endGame(solved: Bool) {
-        //pull up new screen depending on wordle is solved or not
+        self.guessField.isEnabled = false
+        if solved {
+            performSegue(withIdentifier: "won", sender: self)
+        }
+        else {
+            performSegue(withIdentifier: "lost", sender: self)
+        }
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.identifier == "won") {
+            if let confettiVC = segue.destination as? ConfettiVC {
+                confettiVC.color = UIColor.systemGreen.cgColor
+            }
+        }
+        if(segue.identifier == "lost") {
+            if let confettiVC = segue.destination as? ConfettiVC {
+                confettiVC.color = UIColor.systemRed.cgColor
+            }
+        }
     }
     
     
